@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  -->
+
 <inboundEndpoint xmlns="http://ws.apache.org/ns/synapse"
                  name="TwitterInboundEP"
                  sequence="reqSequence"
@@ -24,15 +25,13 @@
                  suspend="false">
     <parameters>
         <parameter name="sequential">true</parameter>
-        <parameter name="interval">1</parameter>
+        <parameter name="interval">1000</parameter>
         <parameter name="coordination">true</parameter>
-        <parameter name="connection.twitter.consumerkey">4pmtU0xGFxnavL8oPVhaMH5xg</parameter>
-        <parameter name="connection.twitter.consumersecret">CXaXBeRvUjiI3rRsfG0NHIlVEzzheOTNoctZCKVdcIG8OVRHOB
-        </parameter>
-        <parameter name="connection.twitter.accesstoken">3250392756-icdYOUmfNXmKkthjIhZ5RMgx9Yd8ZbRT4Ca1Teo</parameter>
-        <parameter name="connection.twitter.accesssecret">nzs6H6zHiESO1NnjXa8RNCnyDgjUQQXQ7gTrxk7FCowLb</parameter>
-        <parameter name="twitter.operation">user</parameter>
-        <parameter name="twitter.filter.language">en,fr</parameter>
-        <parameter name="twitter.filter.count">100</parameter>
+        <parameter name="connection.twitter.consumerKey">4pmtU0xGFxnavL8oPVhaMH5xg</parameter>
+        <parameter name="connection.twitter.consumerSecret">CXaXBeRvUjiI3rRsfG0NHIlVEzzheOTNoctZCKVdcIG8OVRHOB</parameter>
+        <parameter name="connection.twitter.accessToken">3250392756-icdYOUmfNXmKkthjIhZ5RMgx9Yd8ZbRT4Ca1Teo</parameter>
+        <parameter name="connection.twitter.accessSecret">nzs6H6zHiESO1NnjXa8RNCnyDgjUQQXQ7gTrxk7FCowLb</parameter>
+        <parameter name="twitter.operation">sample_negative</parameter>
+        <parameter name="twitter.language">en</parameter>
     </parameters>
 </inboundEndpoint>
